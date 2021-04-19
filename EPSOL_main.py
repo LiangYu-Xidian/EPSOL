@@ -111,7 +111,7 @@ def main():
 
     model.fit(x_train, y_oh_train, batch_size=64,
               epochs=10,
-              validation_data=(x_test, y_oh_test),
+              validation_data=(x_dev, y_oh_dev),
               callbacks=get_callbacks())
     
     
